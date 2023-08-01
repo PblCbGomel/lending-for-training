@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Лендинг</title>
     <link rel="stylesheet" href="style.css" />
+    <link rel="icon" type="image/x-icon" href="./assets/фавикон.png" />
   </head>
   <body>
     <header>
@@ -58,55 +59,130 @@
       </section>
       <section class="our-creations" id="our-creations">
         <h2>Наши творения</h2>
-        <p>
-          Много крутого текста: Lorem ipsum dolor sit amet, consectetur
-          adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
-          magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation
-          ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute
-          irure dolor in reprehenderit in voluptate velit esse cillum dolore eu
-          fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident,
-          sunt in culpa qui officia deserunt mollit anim id est laborum. Много
-          крутого текста: Lorem ipsum dolor sit amet, consectetur adipiscing
-          elit, sed do eiusmod tempor incididunt ut labore et dolore magna
-          aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
-          laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor
-          in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
-          pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
-          culpa qui officia deserunt mollit anim id est laborum. Много крутого
-          текста: Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
-          do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
-          ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-          aliquip ex ea commodo consequat. Duis aute irure dolor in
-          reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
-          pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
-          culpa qui officia deserunt mollit anim id est laborum.
-        </p>
+        <div class="grid-container">
+          <figure>
+            <img src="./assets/кофе.JPG" alt="кофе" width="200" height="200" />
+          </figure>
+          <figure>
+            <img
+              src="./assets/печеньки.jpg"
+              alt="печеньки"
+              width="200"
+              height="200"
+            />
+          </figure>
+
+          <figure>
+            <img src="./assets/офис.jpg" alt="офис" width="200" height="200" />
+          </figure>
+          <figure>
+            <img src="./assets/кофе.JPG" alt="кофе" width="200" height="200" />
+          </figure>
+          <figure>
+            <img
+              src="./assets/печеньки.jpg"
+              alt="печеньки"
+              width="200"
+              height="200"
+            />
+          </figure>
+        </div>
       </section>
       <section class="contacts" id="contacts">
         <h2>Свяжите(сь) с нами</h2>
-        <p>
-          Много крутого текста: Lorem ipsum dolor sit amet, consectetur
-          adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
-          magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation
-          ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute
-          irure dolor in reprehenderit in voluptate velit esse cillum dolore eu
-          fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident,
-          sunt in culpa qui officia deserunt mollit anim id est laborum. Много
-          крутого текста: Lorem ipsum dolor sit amet, consectetur adipiscing
-          elit, sed do eiusmod tempor incididunt ut labore et dolore magna
-          aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
-          laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor
-          in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
-          pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
-          culpa qui officia deserunt mollit anim id est laborum. Много крутого
-          текста: Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
-          do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
-          ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-          aliquip ex ea commodo consequat. Duis aute irure dolor in
-          reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
-          pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
-          culpa qui officia deserunt mollit anim id est laborum.
-        </p>
+
+        <form>
+          <legend>Я есть форма</legend>
+          <label for="name">Name:</label>
+          <input
+            pattern="[a-zA-Zа-яА-ЯёЁ]{2,12}"
+            required
+            value="имя"
+            id="name"
+            type="text"
+            name="name"
+            placeholder="Введите имя"
+          />
+
+          <label for="radio1">Radio1</label>
+          <input type="radio" name="radio" id="radio1" />
+          <label for="radio2">Radio2</label>
+          <input type="radio" name="radio" id="radio2" />
+          <label for="radio3">Radio3</label>
+          <input type="radio" name="radio" id="radio3" />
+
+          <label for="btn" name="btn" id="btn">button</label>
+          <input type="button" />
+
+          <label for="checkbox">checkbox</label>
+          <input type="checkbox" name="checkbox" id="checkbox" />
+
+          <label for="file">file</label>
+          <input type="file" name="file" id="file" />
+
+          <label for="hidden">hidden</label>
+          <input
+            type="hidden"
+            name="hidden"
+            value="скрытое значение"
+            id="hidden"
+          />
+
+          <label for="image">image</label>
+          <input type="image" name="image" id="checimagekbox" />
+
+          <label for="password">password</label>
+          <input type="password" name="password" id="password" />
+
+          <label for="reset">reset</label>
+          <input type="reset" name="reset" id="reset" />
+
+          <label for="submit">submit</label>
+          <input type="submit" name="submit" id="submit" />
+
+          <label for="text">text</label>
+          <input type="text" name="text" id="text" />
+          <label for="text-area">text</label>
+          <textarea
+            rows="10"
+            cols="45"
+            name="text-area"
+            id="text-area"
+          ></textarea>
+          <label for="color">color</label>
+          <input type="color" name="color" id="color" />
+          <label for="date">date</label>
+          <input type="date" name="date" id="date" />
+          <label for="datetime">datetime</label>
+          <input type="datetime" name="datetime" id="datetime" />
+          <label for="datetime-local">datetime-local</label>
+          <input
+            type="datetime-local"
+            name="datetime-local"
+            id="datetime-local"
+          />
+          <label for="email">email</label>
+          <input type="email" name="email" id="email" />
+          <label for="number">number</label>
+          <input type="number" name="number" id="number" />
+          <label for="range">range</label>
+          <input type="range" name="range" id="range" />
+          <label for="search">search</label>
+          <input type="search" name="search" id="search" />
+          <label for="tel">tel</label>
+          <input type="tel" name="tel" id="tel" />
+          <label for="time">time</label>
+          <input type="time" name="time" id="time" />
+          <label for="url">url</label>
+          <input type="url" name="url" id="url" />
+          <label for="month">month</label>
+          <input type="month" name="month" id="month" />
+          <label for="week">week</label>
+          <input type="week" name="week" id="week" />
+          <button onclick="document.location='second-page.html'">
+            Отправить
+          </button>
+        </form>
       </section>
     </main>
     <footer>©PblCbGomel 2023</footer>
