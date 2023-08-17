@@ -11,14 +11,18 @@
     <header>
       <nav>
         <ul>
-          <li><a href="#our-company">НашаКомпания</a></li>
-          <li><a href="#about-us">О нас</a></li>
-          <li><a href="#our-creations">Че мы делаем</a></li>
-          <li><a href="#contacts">Контакты</a></li>
+          <li class="nav-li"><a href="#our-company">НашаКомпания</a></li>
+          <li class="nav-li"><a href="#about-us">О нас</a></li>
+          <li class="nav-li"><a href="#our-creations">Че мы делаем</a></li>
+          <li class="nav-li"><a href="#contacts">Контакты</a></li>
         </ul>
       </nav>
+      <div class="burger-wrapper">
+        <button class="burger"></button>
+      </div>
     </header>
     <main>
+      <script src="./scripts.js" async></script>
       <section class="our-company" id="our-company">
         <h1>НашаКомпания</h1>
         <ul class="about-list">
@@ -27,13 +31,13 @@
           <li>Более 100 заказов</li>
         </ul>
         <figure>
-          <img src="./assets/офис.jpg" alt="офис" width="300" height="200" />
+          <img src="./assets/офис.jpg" alt="офис" width="150" height="100" />
           <figcaption>Наш офис</figcaption>
         </figure>
       </section>
       <section class="about-us" id="about-us">
         <h2>О нас</h2>
-        <p>
+        <p id="text" class="text text2 text3">
           Много крутого текста: Lorem ipsum dolor sit amet, consectetur
           adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
           magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation
@@ -62,29 +66,6 @@
         <div class="grid-container">
           <figure>
             <img src="./assets/кофе.JPG" alt="кофе" width="200" height="200" />
-          </figure>
-          <figure>
-            <img
-              src="./assets/печеньки.jpg"
-              alt="печеньки"
-              width="200"
-              height="200"
-            />
-          </figure>
-
-          <figure>
-            <img src="./assets/офис.jpg" alt="офис" width="200" height="200" />
-          </figure>
-          <figure>
-            <img src="./assets/кофе.JPG" alt="кофе" width="200" height="200" />
-          </figure>
-          <figure>
-            <img
-              src="./assets/печеньки.jpg"
-              alt="печеньки"
-              width="200"
-              height="200"
-            />
           </figure>
         </div>
       </section>
@@ -186,5 +167,6 @@
       </section>
     </main>
     <footer>©PblCbGomel 2023</footer>
+    <script src="./scripts.js"></script>
   </body>
 </html>
